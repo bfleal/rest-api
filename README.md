@@ -7,12 +7,12 @@ Creating a REST API with Node.js
  - Install node.js:
    ```
    curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
-   sudo apt-get install -y nodejs
+   sudo apt install -y nodejs
    ```
 
- - Install build tools
+ - Install build tools:
    ```  
-   sudo apt-get install -y build-essential
+   sudo apt install -y build-essential gcc g++ make
    ```
 
 ## Routes
@@ -36,7 +36,23 @@ Creating a REST API with Node.js
    - GET (restrict)
    - DELETE (restrict)
 
-## Step #1
+## Creating API
+
+### Step #1 - Create the project
+
  - Initialize project and named it:
-  npm init
-  package name: <your-project-name>
+   ```
+   npm init
+   package name: <your-project-name>
+   ```
+
+### Step #2 - Install node dependencies
+
+ - Install express framework to make building the API easier
+   ```
+   npm install --save express
+   ```
+
+### Step #3 - Create serve.js file
+
+### Step #4 - Create app.js file
