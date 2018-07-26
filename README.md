@@ -48,14 +48,35 @@ Creating a REST API with Node.js
 
 ### Step #2 - Install node dependencies
 
- - Install express framework to make building the API easier
+ - Install express framework to make building the API easier:
    ```
    npm install --save express
    ```
 
- - Install nodemon to monitoring changes in files and refresh API automatically
+ - Install nodemon to monitoring changes in files and refresh API automatically:
    ```
    npm install --save-dev nodemon
+   ```
+
+ - Include nodemon to _scripts_ session on _package.json_ file. They must see likes:
+   ```
+   "name": "rest-api",
+   "version": "1.0.0",
+   "description": "A Node.js RESTful API ",
+   "main": "index.js",
+   "scripts": {
+     "test": "echo \"Error: no test specified\" && exit 1",
+     "start": "nodemon server.js"
+   },
+   "keywords": [
+     "node",
+     "restful",
+     "api"
+   ],
+   .
+   .
+   .    
+
    ```
 
 ### Step #3 - Create serve.js file
