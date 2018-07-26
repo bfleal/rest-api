@@ -58,7 +58,7 @@ Creating a REST API with Node.js
    npm install --save-dev nodemon
    ```
 
- - Include nodemon to _scripts_ session on _package.json_ file. They must see likes:
+   Include nodemon in _scripts_ session on _package.json_ file. They must see likes:
    ```
    "name": "rest-api",
    "version": "1.0.0",
@@ -66,21 +66,38 @@ Creating a REST API with Node.js
    "main": "index.js",
    "scripts": {
      "test": "echo \"Error: no test specified\" && exit 1",
-     "start": "nodemon server.js"
+     __"start": "nodemon server.js"__
    },
    "keywords": [
      "node",
      "restful",
      "api"
    ],
+   . 
    .
    .
-   .    
-
    ```
 
+   Now, run API server from npm with the follow command:
+   ```
+   npm start
+   ```
+
+   __Obs:__ It's no longer necessary stop and run server.js with each update in the files.
+
+ - Install morgan package for logging Node.js requests:
+   ```
+   npm install --save morgan
+   ```
+
+ - 
 ### Step #3 - Create serve.js file
 
 ### Step #4 - Create app.js file
 
 ### Step #5 - Create route files
+
+ Create route files and import them to _app.js_ file:
+
+ - Create /api/routes/products.js file;
+ - Create /api/routes/orders.js file;
