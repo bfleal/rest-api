@@ -53,6 +53,13 @@ Creating a REST API with Node.js
    npm install --save express
    ```
 
+ - Install nodemon to monitoring changes in files and refresh API automatically
+   ```
+   npm install --save-dev nodemon
+   ```
+
 ### Step #3 - Create serve.js file
 
 ### Step #4 - Create app.js file
+
+### Step #5 - Create route files
