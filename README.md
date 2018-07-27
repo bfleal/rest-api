@@ -48,12 +48,12 @@ Creating a REST API with Node.js
 
 ### Step #2 - Install node dependencies
 
- - Install express framework to make building the API easier:
+ - Install _express_ framework to make building the API easier:
    ```
    npm install --save express
    ```
 
- - Install nodemon to monitoring changes in files and refresh API automatically:
+ - Install _nodemon_ to monitoring changes in files and refresh API automatically:
    ```
    npm install --save-dev nodemon
    ```
@@ -85,19 +85,23 @@ Creating a REST API with Node.js
 
    __Obs:__ It's no longer necessary stop and run server.js with each update in the files.
 
- - Install morgan package for logging Node.js requests:
+ - Install _morgan_ package to logging Node.js requests:
    ```
    npm install --save morgan
    ```
 
- - 
+ - Install _body-parser_ to parser body requests:
+   ```
+   npm install --save body-parser
+   ```
+ 
 ### Step #3 - Create serve.js file
 
 ### Step #4 - Create app.js file
 
 ### Step #5 - Create route files
 
- Create route files and import them to _app.js_ file:
+ Create route files and import them in _app.js_ file:
 
- - Create /api/routes/products.js file;
- - Create /api/routes/orders.js file;
+ - Create _/api/routes/products.js_ file;
+ - Create _/api/routes/orders.js_ file;
