@@ -106,6 +106,7 @@ Creating a REST API with Node.js
  - Create _/api/routes/products.js_ file;
  - Create _/api/routes/orders.js_ file;
 
+
 ## Creating Database
 
 ### Install MongoDB Community Edition
@@ -134,30 +135,27 @@ Creating a REST API with Node.js
 
 ### Run MongoDB Community Edition
 
- - Start MongoDB:
+ - __Start__ MongoDB:
    ```
    sudo service mongod start
    ```
 
- - Verify that MongoDB has started successfully:
-   Verify that the mongod process has started successfully by checking the contents of the log file at /var/log/mongodb/mongod.log for a line reading.
+ - __Verify__ that the mongod process has started successfully by checking the contents of the log file at /var/log/mongodb/mongod.log for a line reading.
    ```
    [initandlisten] waiting for connections on port 27017
    ```
 
- - Stop MongoDB:
-   As needed, you can stop the mongod process by issuing the following command.
+ - As needed, you can __stop__ the mongod process by issuing the following command.
    ```
    sudo service mongod stop
    ```
 
- - Restart MongoDB:
-   Issue the following command to restart mongod.
+ - Issue the following command to __restart__ mongod.
    ```
    sudo service mongod restart
    ```
 
- - Begin using MongoDB:
+ - __Begin__ using MongoDB:
    Start a mongo shell on the same host machine as the mongod. Use the --host command line option to specify the localhost address (in this case 127.0.0.1) and port that the mongod listens on.
    ```
    mongo --host 127.0.0.1:27017
