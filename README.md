@@ -94,6 +94,11 @@ Creating a REST API with Node.js
    ```
    npm install --save body-parser
    ```
+
+ - Install mongoose to manage mongoDB transaction, schemas, etc:
+   ```
+   npm install --save mongoose
+   ```
  
 ### Step #3 - Create serve.js file
 
@@ -155,8 +160,7 @@ Creating a REST API with Node.js
    sudo service mongod restart
    ```
 
- - __Begin__ using MongoDB:
-   Start a mongo shell on the same host machine as the mongod. Use the --host command line option to specify the localhost address (in this case 127.0.0.1) and port that the mongod listens on.
+ - Start a mongo __shell__ on the same host machine as the mongod. Use the --host command line option to specify the localhost address (in this case 127.0.0.1) and port that the mongod listens on.
    ```
    mongo --host 127.0.0.1:27017
    ```
