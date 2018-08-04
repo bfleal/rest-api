@@ -122,6 +122,11 @@ Creating a REST API with Node.js
 ### Install MongoDB Community Edition
 
  More info: https://docs.mongodb.com/master/tutorial/install-mongodb-on-ubuntu/
+ 
+ - Dependencies:
+  ```
+  sudo apt-get install libcurl3 openssl
+  ```
 
  - Import the public key used by the package management system:
    ```
