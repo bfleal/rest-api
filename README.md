@@ -95,9 +95,14 @@ Creating a REST API with Node.js
    npm install --save body-parser
    ```
 
- - Install mongoose to manage mongoDB transaction, schemas, etc:
+ - Install _mongoose_ to manage mongoDB transaction, schemas, etc:
    ```
    npm install --save mongoose
+   ```
+
+ - Install _multer_ package to parser body requests,like body-parser, but to parser contents of body too, like images:
+   ```
+   npm install --save multer
    ```
  
 ### Step #3 - Create serve.js file
