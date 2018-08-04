@@ -110,6 +110,11 @@ Creating a REST API with Node.js
    npm install --save bcrypt
    ```
 
+ - Install _jsonwebtoken_ package to generate and manage toke:
+   ```
+   npm install --save jsonwebtoken
+   ```
+
 ### Step #3 - Create serve.js file
 
 ### Step #4 - Create app.js file

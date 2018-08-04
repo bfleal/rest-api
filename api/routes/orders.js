@@ -7,8 +7,7 @@ const Product = require('../models/product');
 
 // Handle incoming GET requests to /orders
 router.get('/', (req, res, next) => {
-	Order
-		.find()
+	Order.find()
 		.select('product quantity _id')
 		.populate('product', 'name')
 		.then(docs => {
@@ -36,8 +35,7 @@ router.get('/', (req, res, next) => {
 
 // Handle incoming POST requests to /orders
 router.post('/', (req, res, next) => {
-	Product
-		.findById(req.body.productId)
+	Product.findById(req.body.productId)
 		.then(product => {
 			if (!product) {
 				return res.status(404).json({
@@ -78,8 +76,7 @@ router.post('/', (req, res, next) => {
 		
 // Handle incoming GET requests to /orders/orderId
 router.get('/:orderId', (req, res, next) => {
-	Order
-		.findById(req.params.orderId)
+	Order.findById(req.params.orderId)
 		.populate('product', 'name')
 		.then(order => {
 			if (!order) {
@@ -105,8 +102,7 @@ router.get('/:orderId', (req, res, next) => {
 
 // Handle incoming DELETE requests to /orders/orderId
 router.delete('/:orderId', (req, res, next) => {
-	Order
-		.remove({
+	Order.remove({
 			_id: req.params.orderId
 		})
 		.then(result => {

@@ -33,8 +33,7 @@ const Product = require('../models/product');
 
 // Handle incoming GET requests to /products
 router.get('/', (req, res, next) => {
-	Product 
-		.find()
+	Product.find()
 		.select("_id name price productImage")
 		.then(docs => {
 			const response = {
@@ -72,8 +71,7 @@ router.post('/', upload.single('productImage'), (req, res, next) => {
 		productImage: req.file.path
 	});
 
-	product
-		.save()
+	product.save()
 		.then(result => {
 			console.log(result);
 			res.status(201).json({
