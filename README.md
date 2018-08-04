@@ -105,6 +105,11 @@ Creating a REST API with Node.js
    npm install --save multer
    ```
  
+ - Install _bcrypt_ to hashed password in signin and signup requests:
+   ```
+   npm install --save bcrypt
+   ```
+
 ### Step #3 - Create serve.js file
 
 ### Step #4 - Create app.js file
